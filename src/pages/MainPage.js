@@ -6,7 +6,7 @@ const MainPage = () => (
         <div className="row">
             <div className="col-md-12">
                 <h1>Inicio</h1>
-                <p>Esta es la página de inicio!</p>
+                <p>Esta es la página de inicio de nuestra pequeña aplicación de Blog!</p>
 
                 <Link to="/new-post" className="btn btn-primary mr-2">
                     Nuevo Post
