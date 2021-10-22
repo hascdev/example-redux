@@ -1,11 +1,11 @@
 
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { getPost } from '../actions/postActions'
+import { getPost } from '../actions/postActions';
 import { Post } from '../components/Post';
 
-import { getComments } from '../actions/commentsActions'
+import { getComments } from '../actions/commentsActions';
 import { Comment } from '../components/Comment';
 
 const PostPage = ({ match }) => {

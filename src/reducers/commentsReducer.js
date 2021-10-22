@@ -6,13 +6,17 @@ export const defaultState = {
 }
 
 export default function commentsReducer(state = defaultState, action) {
-    switch (action.type) { // sentencias case por cada acción, devolviendo el estado al completo junto con los cambios que se hayan realizado.
+    /*
+     Switch con sentencias case por cada acción, 
+     devolviendo el estado al completo junto con los cambios que se hayan realizado.
+    */
+    switch (action.type) { 
         case GET_COMMENTS:
             return { ...state, loading: true };
         case GET_COMMENTS_SUCCESS:
-            return { comments: action.payload, loading: false };
+            return { ...state, comments: action.payload, loading: false };
         case GET_COMMENTS_ERROR:
-            return { error: action.payload, loading: false }
+            return { ...state, error: action.payload, loading: false }
         default:
             return state;
     }

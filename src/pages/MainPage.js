@@ -8,6 +8,9 @@ const MainPage = () => (
                 <h1>Inicio</h1>
                 <p>Esta es la página de inicio!</p>
 
+                <Link to="/new-post" className="btn btn-primary mr-2">
+                    Nuevo Post
+                </Link>
                 <Link to="/posts" className="btn btn-primary">
                     Ver Posts
                 </Link>
